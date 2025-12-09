@@ -27,10 +27,6 @@ export class HttpExceptionFilter implements ExceptionFilter {
       data: null,
       error,
     };
-    console.log(
-      '🚀 ~ HttpExceptionFilter ~ catch ~ responsePayload:',
-      responsePayload,
-    );
 
     response.status(status).send(responsePayload);
   }
